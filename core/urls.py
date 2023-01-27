@@ -28,6 +28,8 @@ urlpatterns = [
     path('checkout/', include('checkout.urls', namespace='checkout')),
     path('__debug__/', include(debug_toolbar.urls)),
     path('', include('store.urls', namespace='store')),
+
+    path('core/api/', include('api_core.urls')),
 ]
 
 if settings.DEBUG:
